@@ -427,20 +427,22 @@
         </div>
         <form class="footer__input">
           <p class="footer__input-text">Subscribe</p>
-          <label class="footer__input-inner">
-            <input
-              class="footer__input-inner-main"
-              type="email"
-              placeholder="E-mail"
-              name="footer-email"
-            />
+          <div class="footer__input-inner">
+            <label class="footer__label">
+              <input
+                class="footer__input-inner-main"
+                type="email"
+                placeholder="E-mail"
+                name="footer-email"
+              />
+            </label>
             <button class="footer__input-inner-btn" type="submit">
               Subscribe
               <svg class="footer__send-icon" width="24" height="24">
                 <use href="./images/icons.svg#send-icon"></use>
               </svg>
             </button>
-          </label>
+          </div>
         </form>
       </div>
     </footer>
@@ -455,34 +457,38 @@
           Leave your contacts and we will call you back
         </p>
         <form class="modal-form">
-          <label class="modal-form__label" name="form-info">
+          <label class="modal-form__label">
             <span
               >Name
-              <svg class="modal-icon modal-icon-first" width="18" height="18">
+              <svg
+                class="modal-icon-input modal-icon-first"
+                width="18"
+                height="18"
+              >
                 <use href="./images/icons.svg#modal-person"></use>
               </svg>
             </span>
             <input class="modal-form__label-input" type="text" />
           </label>
-          <label class="modal-form__label" name="form-info">
+          <label class="modal-form__label">
             <span
               >Phone
-              <svg class="modal-icon" width="18" height="24">
+              <svg class="modal-icon-input" width="18" height="24">
                 <use href="./images/icons.svg#modal-phone"></use>
               </svg>
             </span>
             <input class="modal-form__label-input" type="number" />
           </label>
-          <label class="modal-form__label" name="form-info">
+          <label class="modal-form__label">
             <span
               >Email
-              <svg class="modal-icon" width="18" height="24">
+              <svg class="modal-icon-input" width="18" height="24">
                 <use href="./images/icons.svg#modal-mail"></use>
               </svg>
             </span>
             <input class="modal-form__label-input" type="email" />
           </label>
-          <label class="modal-form__label" name="form-info">
+          <label class="modal-form__label">
             <span>Comment</span>
             <textarea
               class="modal-form__label-textarea"
@@ -491,16 +497,14 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <label class="modal-form__label" name="form-info">
+          <label class="modal-form__label-policy">
             <input
               class="modal-form-checkbox"
               type="checkbox"
               name="form-info"
             />
-            <p class="modal-form__label-text">
-              I accept the terms and conditions of the
-              <a class="modal-form__label-link" href="#">Privacy Policy</a>
-            </p>
+            I accept the terms and conditions of the
+            <a class="modal-form__label-link" href="#">Privacy Policy</a>
           </label>
           <button class="modal-form__btn" type="submit">Send</button>
         </form>
