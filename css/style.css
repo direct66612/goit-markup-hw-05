@@ -142,13 +142,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-.modal-form-checkbox:checked {
+.modal-form-checkbox:checked + .modal-icon-checkbox {
   background-color: #404bbf;
-}
-.modal-form-checkbox:checked + .modal-icon-click {
+  border: none;
   fill: #f4f4fd;
 }
-
 .modal-form__label-link {
   color: #4d5ae5;
 }
